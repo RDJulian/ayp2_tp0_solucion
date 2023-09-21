@@ -43,7 +43,7 @@ void Fantasma::responderPregunta(std::string pregunta) {
                estaPalabra(preguntaLower, "abrir")) {
         std::cout << "/agitar_puerta/" << std::endl;
     } else {
-        if (pregunta.size() > LIMITE_CARACTERES) {
+        if (pregunta.length() > LIMITE_CARACTERES) {
             std::cout << "..." << std::endl;
         } else {
             std::cout << invertirPalabras(pregunta) << std::endl;
